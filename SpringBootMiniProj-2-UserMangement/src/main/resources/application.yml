@@ -1,0 +1,34 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 'null'
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: Shubham9713
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: shubh.rsp@gmail.com
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .jsp
+app:
+  message:
+    succMsg: Dear cutomer your Registration almost completed check your mail to unlock your account
+    fail: Registartion Failed
